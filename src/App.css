@@ -9,3 +9,40 @@
     justify-content: center;
     align-items: center;
 }
+
+.resume-items .resume-item:first-child {
+  padding-top: 0;
+}
+
+.popup-box .desc {
+  padding: 20px;
+}
+.header .top-menu ul li a svg.icon {
+  width: 20px;
+}
+img {
+  max-width: 100%;
+}
+.resume-items .resume-item .date {
+  color: #fff;
+  background-color: #78cc6d;
+}
+.ReactModal__Overlay.ReactModal__Overlay--after-open {
+  z-index: 100;
+}
+.ReactModal__Content.ReactModal__Content--after-open {
+  padding: 0;
+  top: 0;
+  left: 50%;
+  overflow: visible;
+  overflow-y: scroll;
+  height: 100%;
+  background: #ffffff;
+}
+@media screen and (min-width: 730px) {
+  .ReactModal__Content.ReactModal__Content--after-open {
+      width: 720px;
+      margin: 0 0 0 -360px;
+      left: 50% !important;
+  }
+}

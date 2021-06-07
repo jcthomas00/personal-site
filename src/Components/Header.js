@@ -1,14 +1,16 @@
+import { Link } from 'react-router-dom';
+
 const Header = () => {
      return (
           <header className="header">
                {/* header profile */}
                <div className="profile">
-                    <div className="title">Ryan Adlard</div>
+                    <div className="title">Jacob Thomas</div>
                     <div className="subtitle subtitle-typed">
                          <div className="typing-title">
-                              <p>Web Designer</p>
                               <p>Developer</p>
-                              <p>Freelancer</p>
+                              <p>Probrem Solver</p>
+                              <p>Eternal Student</p>
                          </div>
                     </div>
                </div>
@@ -17,35 +19,41 @@ const Header = () => {
                {/* menu */}
                <div className="top-menu">
                     <ul>
-                         <li className="active">
-                              <a href="#about-card">
+                         <li>
+                              <Link to="/">
                                    <span className="icon ion-person" />
                                    <span className="link">About</span>
-                              </a>
+                              </Link>
                          </li>
                          <li>
-                              <a href="#resume-card">
+                              <Link to="experience">
                                    <span className="icon ion-android-list" />
-                                   <span className="link">Resume</span>
-                              </a>
+                                   <span className="link">Work History</span>
+                              </Link>
                          </li>
                          <li>
-                              <a href="#works-card">
-                                   <span className="icon ion-paintbrush" />
-                                   <span className="link">Works</span>
-                              </a>
+                              <Link to="works">
+                                   <span className="icon fa fa-briefcase" />
+                                   <span className="link">Portfolio</span>
+                              </Link>
                          </li>
                          <li>
-                              <a href="#blog-card">
-                                   <span className="icon ion-chatbox-working" />
-                                   <span className="link">Blog</span>
-                              </a>
+                              <Link to="education">
+                                   <span className="icon fa fa-university" />
+                                   <span className="link">Education</span>
+                              </Link>
                          </li>
                          <li>
-                              <a href="#contacts-card">
+                              <Link to="resume">
+                                   <span className="icon ion-android-list" />
+                                   <span className="link">Skills</span>
+                              </Link>
+                         </li>
+                         <li>
+                              <Link to="contact">
                                    <span className="icon ion-at" />
                                    <span className="link">Contact</span>
-                              </a>
+                              </Link>
                          </li>
                     </ul>
                </div>
