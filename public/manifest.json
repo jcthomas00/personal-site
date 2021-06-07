@@ -1,6 +1,11 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Jacob's Portfolio",
+  "name": "Jacob's Personal Website",
+  "homepage": "https://jcthomas00.github.io/personal-site",
+  "scripts": {
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
+  },
   "icons": [
     {
       "src": "favicon.ico",

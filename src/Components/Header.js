@@ -26,31 +26,31 @@ const Header = () => {
                               </Link>
                          </li>
                          <li>
-                              <Link to="experience">
+                              <Link to="/experience">
                                    <span className="icon ion-android-list" />
                                    <span className="link">Work History</span>
                               </Link>
                          </li>
                          <li>
-                              <Link to="works">
+                              <Link to="/works">
                                    <span className="icon fa fa-briefcase" />
                                    <span className="link">Portfolio</span>
                               </Link>
                          </li>
                          <li>
-                              <Link to="education">
+                              <Link to="/education">
                                    <span className="icon fa fa-university" />
                                    <span className="link">Education</span>
                               </Link>
                          </li>
                          <li>
-                              <Link to="resume">
+                              <Link to="/resume">
                                    <span className="icon ion-android-list" />
                                    <span className="link">Skills</span>
                               </Link>
                          </li>
                          <li>
-                              <Link to="contact">
+                              <Link to="/contact">
                                    <span className="icon ion-at" />
                                    <span className="link">Contact</span>
                               </Link>
