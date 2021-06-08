@@ -39,23 +39,23 @@ class App extends Component {
         <div className="container opened" data-animation-in="fadeInLeft" data-animation-out="fadeOutLeft">
           <Header />
           {isDesktop ? <Intro /> : ''}
-          <Route exact path="/personal-site/">
+          <Route exact path="/">
             {!isDesktop ? <Intro /> : ''}
             <About />
           </Route>
-          <Route exact path="/personal-site/contact">
+          <Route exact path="/contact">
             <Contact />
           </Route>
-          <Route exact path="/personal-site/experience">
+          <Route exact path="/experience">
             <Experience />
           </Route>
-          <Route exact path="/personal-site/works">
+          <Route exact path="/works">
             <Works />
           </Route>
-          <Route exact path="/personal-site/education">
+          <Route exact path="/education">
             <Education />
           </Route>
-          <Route exact path="/personal-site/about">
+          <Route exact path="/about">
             <About />
           </Route>
         </div>

@@ -18,25 +18,25 @@ const Header = () => {
                <div className="top-menu">
                     <ul>
                          <li>
-                              <Link to="/personal-site/">
+                              <Link to="/">
                                    <span className="icon ion-person" />
                                    <span className="link">About</span>
                               </Link>
                          </li>
                          <li>
-                              <Link to="/personal-site/experience">
+                              <Link to="/experience">
                                    <span className="icon ion-android-list" />
                                    <span className="link">Work History</span>
                               </Link>
                          </li>
                          <li>
-                              <Link to="/personal-site/works">
+                              <Link to="/works">
                                    <span className="icon fa fa-briefcase" />
                                    <span className="link">Portfolio</span>
                               </Link>
                          </li>
                          <li>
-                              <Link to="/personal-site/education">
+                              <Link to="/education">
                                    <span className="icon fa fa-university" />
                                    <span className="link">Education</span>
                               </Link>
