@@ -14,45 +14,31 @@ const Header = () => {
                          </div>
                     </div>
                </div>
-               {/* menu btn */}
-               <a href="#" className="menu-btn"><span /></a>
                {/* menu */}
                <div className="top-menu">
                     <ul>
                          <li>
-                              <Link to="/">
+                              <Link to="/personal-site/">
                                    <span className="icon ion-person" />
                                    <span className="link">About</span>
                               </Link>
                          </li>
                          <li>
-                              <Link to="/experience">
+                              <Link to="/personal-site/experience">
                                    <span className="icon ion-android-list" />
                                    <span className="link">Work History</span>
                               </Link>
                          </li>
                          <li>
-                              <Link to="/works">
+                              <Link to="/personal-site/works">
                                    <span className="icon fa fa-briefcase" />
                                    <span className="link">Portfolio</span>
                               </Link>
                          </li>
                          <li>
-                              <Link to="/education">
+                              <Link to="/personal-site/education">
                                    <span className="icon fa fa-university" />
                                    <span className="link">Education</span>
-                              </Link>
-                         </li>
-                         <li>
-                              <Link to="/resume">
-                                   <span className="icon ion-android-list" />
-                                   <span className="link">Skills</span>
-                              </Link>
-                         </li>
-                         <li>
-                              <Link to="/contact">
-                                   <span className="icon ion-at" />
-                                   <span className="link">Contact</span>
                               </Link>
                          </li>
                     </ul>

@@ -6,7 +6,7 @@ const ExperienceCard = (props) => {
                <div className="name">{name}</div>
                <div className="company">{title}</div>
                <ul>
-                    {bullets.map((bullet) => <li>{bullet}</li>)}
+                    {bullets.map((bullet, key) => <li key={key}>{bullet}</li>)}
                </ul>
           </div>
      )

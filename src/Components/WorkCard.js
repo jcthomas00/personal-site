@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import Modal from 'react-modal';
 
 const customStyles = {
@@ -21,18 +20,18 @@ const WorkCard = (props) => {
      }
 
 
-     const { id, title, technologies, image, description, more, website, github, bullets } = props.work;
-
+     const { id, title, technologies, image, description, more, website, github } = props.work;
+     Modal.setAppElement('#root')
      return (
           <div className="col col-d-6 col-t-6 col-m-12 grid-item design border-line-h">
                <div className="box-item">
                     <div className="image">
-                         <a href="javascript:;" onClick={openModal} className="has-popup-media">
+                         <div onClick={openModal} className="has-popup-media">
                               <img src={image} alt={title} />
                               <span className="info">
                                    <span className="ion ion-images" />
                               </span>
-                         </a>
+                         </div>
                     </div>
                     <div className="desc">
                          <a href={`#${id}`} className="name has-popup-media">{title}</a>
@@ -59,7 +58,7 @@ const WorkCard = (props) => {
                                                   {more ? <blockquote>{more}</blockquote> : ''}
                                                   <h3>Tools and tech used:</h3>
                                                   <ul className="list-style">
-                                                       {technologies.map((tech) => { return <li>{tech}</li> })}
+                                                       {technologies.map((tech) => { return <li key={tech}>{tech}</li> })}
                                                   </ul>
                                              </div>
                                              {website ?
@@ -81,7 +80,7 @@ const WorkCard = (props) => {
 
                                         </div>
                                    </div>
-                                   <button title="Close (Esc)" type="button" onClick={closeModal} class="mfp-close">×</button>
+                                   <button title="Close (Esc)" type="button" onClick={closeModal} className="mfp-close">×</button>
                               </div>
                          </div>
                     </Modal>

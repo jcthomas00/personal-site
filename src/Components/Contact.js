@@ -6,7 +6,6 @@ class Contacts extends Component {
           console.log("Mail");
      }
      mail = (e) => {
-          "use strict";
 
           e.preventDefault();
           const nodemailer = require("nodemailer");

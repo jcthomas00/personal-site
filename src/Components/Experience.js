@@ -9,8 +9,8 @@ const Experience = () => {
                     <div className="row">
                          <div className="col col-d-12 border-line-v">
                               <div className="resume-title border-line-h">
-                                   <div class="resume-items">
-                                        {xp.map((job) => { return <ExperienceCard job={job} /> })}
+                                   <div className="resume-items">
+                                        {xp.map((job) => { return <ExperienceCard key={job.id} job={job} /> })}
                                    </div>
                               </div>
                          </div>

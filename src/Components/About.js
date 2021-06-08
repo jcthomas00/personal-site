@@ -4,9 +4,6 @@ const About = () => {
      return (
           <div className="card-inner animated active" id="about-card">
                <div className="card-wrap">
-                    {/* 
-						About 
-					*/}
                     <div className="content about">
                          {/* title */}
                          <div className="title">About Me</div>
@@ -15,10 +12,8 @@ const About = () => {
                               <div className="col col-d-12 col-t-12 col-m-12 border-line-v">
                                    <div className="text-box">
                                         <p>
-                                             I am Ryan Adlard, web designer from USA, California. I have rich experience in
-                                             web site design and building and customization, also I am good at wordpress.
-                                             I love to talk with you about our unique.
-              </p>
+                                             I'm Jacob Thomas, a web developer in Houston, TX. You might find me enjoying myself for hours in a coffee shop while I try to figure out why a section of code isn't working exactly the way I want. While I'm not the fastest or the smartest programmer, I make up for those qualities with my resourcefulness and perseverance. Be on the lookout for beautiful and useful web applications from me.
+                                        </p>
                                    </div>
                               </div>
                               <div className="clear" />

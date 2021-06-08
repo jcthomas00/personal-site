@@ -9,8 +9,8 @@ const Education = () => {
                     <div className="row">
                          <div className="col col-d-12 border-line-v">
                               <div className="resume-title border-line-h">
-                                   <div class="resume-items">
-                                        {edu.map((school) => { return <ExperienceCard job={school} /> })}
+                                   <div className="resume-items">
+                                        {edu.map((school) => { return <ExperienceCard key={school.id} job={school} /> })}
                                    </div>
                               </div>
                          </div>

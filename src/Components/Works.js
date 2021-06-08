@@ -10,7 +10,7 @@ const Works = () => {
                          <div className="title">Recent Works</div>
                          {/* content */}
                          <div className="row grid-items border-line-v">
-                              {works.map((work) => { return <WorkCard work={work} /> })}
+                              {works.map((work) => { return <WorkCard key={work.id} work={work} /> })}
                               <div className="clear" />
                          </div>
                     </div>

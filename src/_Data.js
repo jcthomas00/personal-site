@@ -214,7 +214,7 @@ export const works = [
           bullets: []
      }
 ]
-let experience = {
+export const experience = {
      uthealth: {
           id: 'uthealth',
           name: 'UTHealth',
@@ -395,7 +395,7 @@ export const skills = [
           icon: "devicon-wordpress-plain"
      }
 ]
-let accomplishments = {
+export const accomplishments = {
      indeed: {
           id: 'indeed',
           name: 'Developer Week Austin',
@@ -420,10 +420,4 @@ let accomplishments = {
           date: 'Jan 2019',
           description: "Transformed the UTHealth Careers site by creating an inviting design, implementing it via Foundation and advertised it using on-page SEO techniques to increase unique pageviews from around 1,500 to over 150,000."
      }
-}
-
-export function _getExperience() {
-     return new Promise((res, rej) => {
-          res({ ...experience })
-     })
 }

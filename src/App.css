@@ -39,6 +39,12 @@ img {
   height: 100%;
   background: #ffffff;
 }
+.card-started .profile .social a {
+  color: #000;
+}
+.card-started .profile .social a:hover {
+  color: #78cc6d;
+}
 @media screen and (min-width: 730px) {
   .ReactModal__Content.ReactModal__Content--after-open {
       width: 720px;
