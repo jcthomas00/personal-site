@@ -36,7 +36,6 @@ class App extends Component {
     const isDesktop = this.state.isDesktop;
     return (
       <div className="App">
-        <p>hi</p>
         <div className="container opened" data-animation-in="fadeInLeft" data-animation-out="fadeOutLeft">
           <Header />
           {isDesktop ? <Intro /> : ''}
