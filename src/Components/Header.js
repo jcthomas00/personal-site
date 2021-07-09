@@ -26,7 +26,7 @@ const Header = () => {
                          <li>
                               <Link to="/experience">
                                    <span className="icon ion-android-list" />
-                                   <span className="link">Work History</span>
+                                   <span className="link">Work</span>
                               </Link>
                          </li>
                          <li>
