@@ -1,4 +1,4 @@
-const Intro = () => {
+const Intro = (props) => {
      return (
           <div className="card-started" id="home-card">
                <div className="profile no-photo">
@@ -6,13 +6,16 @@ const Intro = () => {
                     <div className="slide" style={{ backgroundImage: 'url(images/jct-bw.jpg)' }} />
                     {/* profile titles */}
                     <div className="title">Jacob C Thomas</div>
-                    <div className="subtitle subtitle-typed">
-                         <div className="typing-title">
-                              <p>Developer</p>
-                              <p>Probrem Solver</p>
-                              <p>Eternal Student</p>
+                    {props.isDesktop ?
+                         <div className="subtitle subtitle-typed">
+                              <div className="typing-title">
+                                   <p>Developer</p>
+                                   <p>Probrem Solver</p>
+                                   <p>Eternal Student</p>
+                              </div>
                          </div>
-                    </div>
+                         : ''
+                    }
                     {/* profile socials */}
                     <div className="social">
                          <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/jacobcthomas/"><span className="fab fa-linkedin" /></a>

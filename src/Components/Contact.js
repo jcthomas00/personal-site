@@ -49,7 +49,7 @@ class Contacts extends Component {
      render = () => {
           return (
 
-               <div className="card-inner contacts active" id="contacts-card">
+               <div className="card-inner contacts animated fadeInLeft active" id="contacts-card">
                     <button className="button" onclick={this.test} value="Send Message" />
                     <div className="card-wrap">
                          {/*

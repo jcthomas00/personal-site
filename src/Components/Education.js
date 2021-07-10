@@ -3,7 +3,7 @@ import ExperienceCard from './ExperienceCard';
 
 const Education = () => {
      return (
-          <div className="card-inner active">
+          <div className="card-inner animated fadeInLeft active">
                <div className="card-wrap content resume">
                     <div className="title"><span className="first-word">Education</span> History</div>
                     <div className="row">

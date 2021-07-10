@@ -2,7 +2,7 @@ import Skills from './Skills';
 
 const About = () => {
      return (
-          <div className="card-inner animated active" id="about-card">
+          <div className="card-inner animated animated fadeInLeft active" id="about-card">
                <div className="card-wrap">
                     <div className="content about">
                          {/* title */}

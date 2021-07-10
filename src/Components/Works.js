@@ -3,7 +3,7 @@ import WorkCard from './WorkCard';
 
 const Works = () => {
      return (
-          <div className="card-inner active" id="works-card">
+          <div className="card-inner animated fadeInLeft active" id="works-card">
                <div className="card-wrap">
                     <div className="content works">
                          {/* title */}

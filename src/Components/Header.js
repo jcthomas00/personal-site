@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
      return (
@@ -18,28 +18,28 @@ const Header = () => {
                <div className="top-menu">
                     <ul>
                          <li>
-                              <Link to="/">
+                              <NavLink exact to="/" activeClassName="active">
                                    <span className="icon ion-person" />
                                    <span className="link">About</span>
-                              </Link>
+                              </NavLink>
                          </li>
                          <li>
-                              <Link to="/experience">
+                              <NavLink to="/experience" activeClassName="active">
                                    <span className="icon ion-android-list" />
                                    <span className="link">Work</span>
-                              </Link>
+                              </NavLink>
                          </li>
                          <li>
-                              <Link to="/works">
+                              <NavLink to="/works" activeClassName="active">
                                    <span className="icon fa fa-briefcase" />
                                    <span className="link">Portfolio</span>
-                              </Link>
+                              </NavLink>
                          </li>
                          <li>
-                              <Link to="/education">
+                              <NavLink to="/education" activeClassName="active">
                                    <span className="icon fa fa-university" />
                                    <span className="link">Education</span>
-                              </Link>
+                              </NavLink>
                          </li>
                     </ul>
                </div>

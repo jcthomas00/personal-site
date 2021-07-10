@@ -38,9 +38,9 @@ class App extends Component {
       <div className="App">
         <div className="container opened" data-animation-in="fadeInLeft" data-animation-out="fadeOutLeft">
           <Header />
-          {isDesktop ? <Intro /> : ''}
+          {isDesktop ? <Intro isDesktop={isDesktop} /> : ''}
           <Route exact path="/">
-            {!isDesktop ? <Intro /> : ''}
+            {!isDesktop ? <Intro isDesktop={isDesktop} /> : ''}
             <About />
           </Route>
           <Route exact path="/contact">
